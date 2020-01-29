@@ -4,9 +4,9 @@ steps:
     dir: hello-cloudbuild
     name: gcr.io/cloud-builders/kubectl
     env:
-    - CLOUDSDK_CORE_PROJECT=${_MY_FIRST_PROJECT}
-    - CLOUDSDK_COMPUTE_ZONE=${_US_CENTRAL1_A}
-    - CLOUDSDK_CONTAINER_CLUSTER=${_STANDARD_CLUSTER_1}
+    - CLOUDSDK_CORE_PROJECT=_MY_FIRST_PROJECT
+    - CLOUDSDK_COMPUTE_ZONE=_US_CENTRAL1_A
+    - CLOUDSDK_CONTAINER_CLUSTER=_STANDARD_CLUSTER_1
     - KUBECONFIG=/workspace/.kube/config
     args:
        - cluster-info
